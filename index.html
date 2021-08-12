@@ -1,0 +1,55 @@
+<!DOCTYPE Html>
+<html lang="eng">
+    <head>
+        <title>Project-103</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+        <link rel="stylesheet" href="style.css">
+
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    </head>
+
+    <body>
+        <div class="container">
+
+            <center>
+                <br><br>
+                <h3 style="background-color: aqua; color:black;">Project-103</h3>
+                <br><br>
+
+                <p style="font-size:25px; background-color:aqua;">In this project it will recognize the following faces: </p>
+                <br><br>
+
+                <b class="btn btn-danger">
+                    Adam
+                    <br>
+                    Bella
+                    <br>
+                    Zeus
+                    <br>
+                </b>
+                <br><br>
+
+                <label>Webcam View</label>
+                <div id="camera"></div>
+                <br><br>
+                <div id="result"></div>
+                <br><br>
+                <button onclick="take_snapshot();" style="color:white;" class="btn btn-danger">Capture</button>
+                <span></span>
+                <button onclick="check();" style="color:white;" class="btn btn-danger">Identify</button>
+                <br><br>
+
+                <p style="font-size: 23px;">Face : <span id="result_face_name"></span></p>
+                <p style="font-size: 23px;">Accuracy : <span id="result_accuracy"></span></p>
+            </center>
+
+            <script src="main.js"></script>
+        </div>
+    </body>
+</html>
